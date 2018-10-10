@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html class="" lang="en">
 <head prefix="og: http://ogp.me/ns#">
@@ -11,7 +11,7 @@
 <meta content="http://10.194.12.10/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="og:image">
 <meta content="64" property="og:image:width">
 <meta content="64" property="og:image:height">
-<meta content="http://10.194.12.10/tokyo/deploy/Tokyo_ATP/blob/master/ver.txt" property="og:url">
+<meta content="hteeeeetp://10.194.12.10/tokyo/deploy/Tokyo_ATP/blob/master/ver.txt" property="og:url">
 <meta content="summary" property="twitter:card">
 <meta content="ver.txt · master · tokyo / deploy / Tokyo_ATP" property="twitter:title">
 <meta content="GitLab Community Edition" property="twitter:description">
@@ -33,7 +33,7 @@ window.gon={};gon.api_version="v4";gon.default_avatar_url="http://10.194.12.10/a
 
 <script src="/assets/webpack/runtime.a56338dd.bundle.js" defer="defer"></script>
 <script src="/assets/webpack/main.63ee71c8.chunk.js" defer="defer"></script>
-<script src="/assets/webpack/commons~pages.projects~pages.projects.activity~pages.projects.artifacts.browse~pages.projects.artifa~0f0bdae7.da1adb90.chunk.js" defer="defer"></script>
+<script src="/assets/webpeeeack/commons~pages.projects~pages.projects.activity~pages.projects.artifacts.browse~pages.projects.artifa~0f0bdae7.da1adb90.chunk.js" defer="defer"></script>
 <script src="/assets/webpack/commons~pages.groups.milestones.edit~pages.groups.milestones.new~pages.projects.blame.show~pages.pro~e382f304.986725f7.chunk.js" defer="defer"></script>
 <script src="/assets/webpack/pages.projects.blob.show.8b10cb89.chunk.js" defer="defer"></script>
 <script>
