@@ -16,6 +16,7 @@ jobs:
 #     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
+        ls -l
         cat /etc/*-release
         docker --version
         g++-9 --version
