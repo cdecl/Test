@@ -14,14 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: test1
-      run: |
-        ls -l
-    - name: test2
-      run: |
-        cat /etc/*-release
-        docker --version
-        g++-9 --version
+ 
     - name: g++ test
       run: |
         sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 90
