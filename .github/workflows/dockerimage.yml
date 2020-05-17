@@ -23,6 +23,7 @@ jobs:
         docker --version
         g++-9 --version
         alias g++=g++-9
+        g++ --version
         
     - name: check
       run: |
