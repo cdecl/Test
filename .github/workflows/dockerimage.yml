@@ -24,7 +24,7 @@ jobs:
         g++-9 --version
     - name: g++ test
       run: |
-        sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 
+        sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 90
         g++ --version
         sudo update-alternatives --auto g++ 
         g++ --version
