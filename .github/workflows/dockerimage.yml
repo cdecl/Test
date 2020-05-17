@@ -13,11 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-#     - uses: actions/checkout@v2
-    - name: Build the Docker image
+    - uses: actions/checkout@v2
+    - name: test1
       run: |
         ls -l
+    - name: test2
+      run: |
         cat /etc/*-release
         docker --version
         g++-9 --version
+        alias g++ g++-9
+        
+    - name: check
+      run: |
+        g++ --version
       
