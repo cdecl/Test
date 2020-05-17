@@ -22,7 +22,8 @@ jobs:
         cat /etc/*-release
         docker --version
         g++-9 --version
-        alias g++=g++-9
+    - name: g++ teste
+        update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9
         g++ --version
         
     - name: check
