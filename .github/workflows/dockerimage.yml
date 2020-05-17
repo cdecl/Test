@@ -7,22 +7,12 @@ on:
     branches: [ master ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
+    container: cdecl/gcc-boost
     steps:
     - uses: actions/checkout@v2
- 
-#     - name: g++ test
-#       run: |
-#         sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 90
-#         g++ --version
-#         sudo update-alternatives --auto g++ 
-#         g++ --version
-        
     - name: check
       run: |
-        sudo find / -name libboost*
+        cat /etc/*-release
       
