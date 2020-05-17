@@ -24,5 +24,5 @@ jobs:
         
     - name: check
       run: |
-        sudo ll /usr/local/include
+        sudo ls -l /usr/local/include
       
