@@ -23,6 +23,7 @@ jobs:
         docker --version
         g++-9 --version
     - name: g++ teste
+      run: |
         update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9
         g++ --version
         
