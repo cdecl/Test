@@ -24,7 +24,7 @@ jobs:
         g++-9 --version
     - name: g++ teste
       run: |
-        update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9
+        alternatives --auto g++
         g++ --version
         
     - name: check
