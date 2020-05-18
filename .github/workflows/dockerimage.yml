@@ -21,6 +21,7 @@ jobs:
         path: output
       
   test-stage:
+    needs: build-stage
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
