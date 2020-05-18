@@ -3,16 +3,34 @@ name: Docker Image CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
-  build:
-#     runs-on: ubuntu-latest
+  build-stage:
+    runs-on: ubuntu-latest
     container: cdecl/gcc-boost
     steps:
     - uses: actions/checkout@v2
     - name: check
       run: |
-        cat /etc/*-release
+        mkdir output
+        cat /etc/*-release > output/release.txt
+    - name: upload artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: output
+        path: output
       
+  test-stage:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name:  download artifact
+      uses: actions/download-artifact@v1
+      with:
+        name: output
+    - name: check
+      run: |
+        dir 
+        type output\release.txt
+
+        
