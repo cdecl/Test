@@ -7,7 +7,7 @@ on:
 jobs:
   build-stage:
     runs-on: ubuntu-latest
-    container: cdecl/gcc-boost
+    container: gcc
     steps:
     - uses: actions/checkout@v2
     - name: check
